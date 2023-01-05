@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/styles.css">
+        <meta name="viewport" content="with-device-width, initial-scale=1.0">
+        <title>
+            University Website Design - Easy Tutorials
+        </title>
+        <script src="https://kit.fontawesome.com/954434ea0f.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@100;200;300;400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+         <section class="sub-header">
+            <nav>
+                <a href="index.html">
+                    <img src="eduford_img/logo.png">
+                    </a>
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="course.html">COURSE</a></li>
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+         </section>
+
+         <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>We are great world's best university</h1>
+                    <p>
+                        Making website is now one of the easiest things in 
+                            the world. You <br> just need toaking website is now one of the easiest things in 
+                            the world. You just need to learn <br> HTML, CSS, Javascript and 
+                            you are good to go. learn
+                    </p>
+                    <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="/Website(tutorial)/eduford_img/about.jpg" alt="">
+                </div>
+            </div>
+         </section>
+
+
+         <section class="footer">
+            <h4>About Us</h4>
+            <p>
+                Making website is now one of the easiest things in 
+                    the world. You <br> just need toaking website is now one of the easiest things in 
+                    the world. You just need to learn <br> HTML, CSS, Javascript and 
+                    you are good to go. learn
+            </p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by P. Bernini</p>
+         </section>
+
+                        <!-- JAVA SCRIPT -->
+         <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+         </script>
+    </body>
+</html>
