@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/954434ea0f.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="with-device-width, initial-scale=1.0">
+        <style>
+            body {
+                margin: 0;
+            }
+            .row {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+
+            }
+            img {
+                width: 100%;
+
+            }
+            .text {
+                text-align: center;
+
+            }
+            .test1 {
+                background-color: lightblue;
+                height: 1500px;
+            }
+            .test {
+                position: sticky;
+                top:0;
+            }
+            @media(max-width: 700px)  {
+                .row {
+                    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+                }
+                img {
+                    order: 2;
+                }
+                .text {
+                    order: 1;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <section class="main-page">
+            <div class="content">
+                <div class="row">
+                        <img src="pic1.jpg">
+                    <div class="text">
+                        <h1>This is the blog heading</h1>
+                        <p>Steamed to go latte filter shop sweet sugar robusta siphon. Strong half and half,
+                             coffee affogato, blue mountain extraction cultivar strong brewed body. Single
+                             origin siphon that to go, aroma saucer fair trade java turkish.
+                             And, fair trade, flavour dark est body doppio.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text">
+                        <h1>This is the blog heading</h1>
+                        <p>Steamed to go latte filter shop sweet sugar robusta siphon. Strong half and half,
+                             coffee affogato, blue mountain extraction cultivar strong brewed body. Single
+                             origin siphon that to go, aroma saucer fair trade java turkish.
+                             And, fair trade, flavour dark est body doppio.
+                        </p>
+                    </div>
+                    <img src="pic2.jpg" class="pic2">
+                </div>
+
+            </div>
+        </section>
+        <div class="test">
+            <p>sticky</p>
+        </div>
+        <div class="test1"></div>
+    </body>
+</html>
