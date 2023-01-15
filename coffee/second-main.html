@@ -19,6 +19,7 @@
             }
             .text {
                 text-align: center;
+                
 
             }
             .test1 {
@@ -28,6 +29,18 @@
             .test {
                 position: sticky;
                 top:0;
+            }
+            .content {
+                transition: 1s;
+            }
+            .test {
+                position: fixed;
+                width: 300px;
+                min-height: 100vh;
+                right: -50%;
+                background-color: aqua;
+                transition: 1s;
+                opacity: 0;
             }
             @media(max-width: 700px)  {
                 .row {
@@ -40,12 +53,18 @@
                     order: 1;
                 }
             }
+            .text h1 {
+                cursor: pointer;
+            }
 
         </style>
     </head>
     <body>
+        <div class="test" id="test">
+            CHUJ CI w DUPE
+        </div>
         <section class="main-page">
-            <div class="content">
+            <div class="content" id="navLinks">
                 <div class="row">
                         <img src="pic1.jpg">
                     <div class="text">
@@ -57,9 +76,12 @@
                         </p>
                     </div>
                 </div>
+                <button onclick="showMenu()">
+                    CLICK ME
+                </button>
                 <div class="row">
                     <div class="text">
-                        <h1>This is the blog heading</h1>
+                        <h1 onclick="hideMenu()">This is the blog heading</h1>
                         <p>Steamed to go latte filter shop sweet sugar robusta siphon. Strong half and half,
                              coffee affogato, blue mountain extraction cultivar strong brewed body. Single
                              origin siphon that to go, aroma saucer fair trade java turkish.
@@ -71,9 +93,30 @@
 
             </div>
         </section>
-        <div class="test">
-            <p>sticky</p>
+        <div class="text">
+            <h1 onclick="hideMenu()">This is the blog heading</h1>
+            <p>Steamed to go latte filter shop sweet sugar robusta siphon. Strong half and half,
+                 coffee affogato, blue mountain extraction cultivar strong brewed body. Single
+                 origin siphon that to go, aroma saucer fair trade java turkish.
+                 And, fair trade, flavour dark est body doppio.
+            </p>
         </div>
-        <div class="test1"></div>
+        <div class="test1">
+
+        </div>
+        
+
+        <script>
+            let test = document.getElementById("test");
+            function showMenu() {
+                test.style.right = "50%";
+                test.style.opacity = "1";
+            }
+            function hideMenu() {
+                test.style.right = "-50%";
+                test.style.opacity = "0";
+            }
+        </script>
+
     </body>
 </html>
